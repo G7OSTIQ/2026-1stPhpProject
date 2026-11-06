@@ -20,4 +20,25 @@
 ?>
 
 
+
+<div class="border rounded">
+    <h1>Advanced String Functions</h1>
+
+    <?php 
+    $shoppinglist = "bread,milk,apples";
+    $shoppinglistArray = explode (",", $shoppinglist);
+    print_r($shoppinglistArray);
+
+    $listOutput = implode (",", $shoppinglistArray); //the opposite of explode
+    //echo "<p>". $listOutput . "</p>";
+    echo "<p>{$listOutput}</p>";
+    
+    
+    
+    ?>
+
+
+</div>
+
+
 <?php include "templates/footer.php"; ?>
